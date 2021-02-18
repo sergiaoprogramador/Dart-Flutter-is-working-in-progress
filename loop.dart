@@ -1,9 +1,12 @@
+import 'dart:io';
+
 main() {
   loopFor();
 
   bool condicao = true;
   int x = 1;
   loopWhile(condicao, x);
+  loopWhileInput();
 }
 
 loopFor() {
@@ -21,5 +24,19 @@ loopWhile(bool condicao, int x) {
       condicao = false;
     }
     x++;
+  }
+}
+
+loopWhileInput() {
+  bool condicao = true;
+  while (condicao) {
+    print("======= Ecreva um Texto: =======");
+    String text = stdin.readLineSync();
+    if (text == "sair") {
+      condicao = false;
+      print("======= PROGRAMA FINALIZADO! =======");
+    } else {
+      print("Você digitou: $text\n");
+    }
   }
 }
