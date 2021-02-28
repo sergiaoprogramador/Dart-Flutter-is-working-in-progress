@@ -1,4 +1,6 @@
-class Pessoa {
+import 'package:objetos/src/humano.dart';
+
+class Pessoa extends Humano {
   String nome;
   int idade;
   String sexo;
