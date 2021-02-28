@@ -3,9 +3,6 @@ class Pessoa {
   int idade;
   String sexo;
 
-  Pessoa({String nome, int idade, String sexo}) {
-    this.nome = nome;
-    this.idade = idade;
-    this.sexo = sexo;
-  }
+  // forma abreviada do construtor
+  Pessoa({this.nome, this.idade, this.sexo});
 }
