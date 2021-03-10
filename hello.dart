@@ -2,7 +2,7 @@ import 'dart:io';
 
 main() {
   print("======== Digite sua idade: =======");
-  var input = stdin.readLineSync();
+  var input = stdin.readLineSync()!;
   var idade = int.parse(input);
   if (idade >= 50) {
     print("Melhor Idade!");
